@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { BsCart3 } from 'react-icons/bs';
+import { FaShoppingCart } from 'react-icons/fa';
+import { ImCross } from 'react-icons/im';
 import CartItem from '../CartItem/CartItem';
 import Checkout from '../Checkout/Checkout';
 import classes from './Cart.module.css';
@@ -14,7 +15,7 @@ const Cart = ({ cart, handleCartItemQuantity, removeItemFromCart }) => {
   return (
     <>
       <button className={`${classes.cartBtn} d-lg-none`} onClick={toggleCart}>
-        {showCart ? <BsCart3 /> : <BsCart3 />}
+        {showCart ? <ImCross /> : <FaShoppingCart />}
       </button>
       <div
         onClick={toggleCart}

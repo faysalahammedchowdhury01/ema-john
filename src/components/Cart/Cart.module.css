@@ -46,4 +46,5 @@
   border: 0;
   border: 4px solid #335672;
   z-index: 9999999999;
+  line-height: 0px;
 }
