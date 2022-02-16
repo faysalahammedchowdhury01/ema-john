@@ -96,9 +96,12 @@ const Shop = () => {
 
   // handle search
   const handleSearch = (search) => {
-    const searchedProducts = products.filter((product) =>
-      product.name.toUpperCase().includes(search.toUpperCase())
-    );
+    const searchedProducts = products.filter((product) => {
+      return (
+        product.name.toUpperCase().includes(search.toUpperCase()) ||
+        product.seller.toUpperCase().includes(search.toUpperCase())
+      );
+    });
     setDisplayedProducts(searchedProducts);
   };
 
