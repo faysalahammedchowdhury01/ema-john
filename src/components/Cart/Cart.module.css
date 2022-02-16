@@ -8,7 +8,7 @@
 }
 
 .products {
-  max-height: 450px;
+  max-height: 350px;
   overflow: auto;
   margin-bottom: 20px;
 }
@@ -24,7 +24,9 @@
   }
 
   .cardBody {
-    width: 450px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 95%;
     margin: auto;
     position: absolute;
     top: 50%;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 import CartItem from '../CartItem/CartItem';
@@ -11,6 +11,12 @@ const Cart = ({ cart, handleCartItemQuantity, removeItemFromCart }) => {
   const toggleCart = () => {
     setShowCart(!showCart);
   };
+
+  useEffect(() => {
+    showCart
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto');
+  }, [showCart]);
 
   return (
     <>
