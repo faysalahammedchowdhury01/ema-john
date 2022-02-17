@@ -7,7 +7,7 @@ import Search from '../Search/Search';
 const Shop = () => {
   // states
   const [products, setProducts] = useState([]);
-  const [displayedProducts, setDisplayedProducts] = useState([]);
+  const [displayedProducts, setDisplayedProducts] = useState(null);
   const [cart, setCart] = useState(
     JSON.parse(localStorage.getItem('cartEma')) || []
   );

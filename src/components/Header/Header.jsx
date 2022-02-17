@@ -1,5 +1,5 @@
-import React from "react";
-import logo from "../../assets/images/logo.png";
+import React from 'react';
+import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   return (
@@ -12,11 +12,11 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className="bg-dark p-2 mt-4 w-100 text-white">
+        <div className="bg-warning p-2 mt-4 w-100 text-dark">
           <ul className="container mb-0 navbar-nav">
             <li className="nav-item">
               <a
-                className="nav-link active text-white"
+                className="nav-link active text-dark"
                 aria-current="page"
                 href="/"
               >
@@ -24,12 +24,12 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="/shops">
+              <a className="nav-link text-dark" href="/shops">
                 Shops
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="/manage">
+              <a className="nav-link text-dark" href="/manage">
                 Manage
               </a>
             </li>
