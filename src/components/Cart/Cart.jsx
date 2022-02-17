@@ -32,14 +32,14 @@ const Cart = ({ cart, handleCartItemQuantity, removeItemFromCart }) => {
         {cart.length === 0 ? (
           <b
             onClick={(e) => e.stopPropagation()}
-            className={`${classes.cardBody} my-3 p-3 bg-light text-dark text-center d-block`}
+            className={`${classes.cardBody} my-4 p-3 bg-light text-dark text-center d-block rounded`}
           >
             Cart is empty!
           </b>
         ) : (
           <div
             onClick={(e) => e.stopPropagation()}
-            className={`${classes.cardBody} my-3 p-3 bg-light text-dark`}
+            className={`${classes.cardBody} my-3 p-3 bg-white text-dark`}
           >
             <h4 className="mb-4">{cart.length} Item(s)</h4>
             <div className={classes.products}>
