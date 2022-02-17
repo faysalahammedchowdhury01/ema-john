@@ -13,7 +13,7 @@ const Cart = ({ cart, handleCartItemQuantity, removeItemFromCart }) => {
   };
 
   useEffect(() => {
-    showCart
+    showCart && window.screen.width < 992
       ? (document.body.style.overflow = 'hidden')
       : (document.body.style.overflow = 'auto');
   }, [showCart]);
@@ -39,7 +39,7 @@ const Cart = ({ cart, handleCartItemQuantity, removeItemFromCart }) => {
         ) : (
           <div
             onClick={(e) => e.stopPropagation()}
-            className={`${classes.cardBody} my-3 p-3 bg-white text-dark`}
+            className={`${classes.cardBody} my-4 p-3 bg-white text-dark`}
           >
             <h4 className="mb-4">{cart.length} Item(s)</h4>
             <div className={classes.products}>
